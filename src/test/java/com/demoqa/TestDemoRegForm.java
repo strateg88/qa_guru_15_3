@@ -42,9 +42,6 @@ public class TestDemoRegForm {
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Delhi")).click();
 
-        executeJavaScript("$('footer').remove()");
-        executeJavaScript("$('#fixedban').remove()");
-
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
