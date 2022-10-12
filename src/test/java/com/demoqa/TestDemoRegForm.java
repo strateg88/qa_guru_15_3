@@ -19,6 +19,8 @@ public class TestDemoRegForm {
     @Test
     void testRegForm() {
         open("/automation-practice-form");
+        executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
         $("#firstName").setValue("Ivan");
         $("#lastName").setValue("Muratov");
         $("#userEmail").setValue("examplemail@mail.com");
